@@ -14,6 +14,7 @@ const Signup = () => {
         .then(result=>{
             const user=result.user;
             console.log(user);
+            event.target.reset();
         })
         .catch(error=>{
             console.log(error.message);
